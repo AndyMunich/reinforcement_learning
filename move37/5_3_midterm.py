@@ -1,3 +1,9 @@
+'''
+This is a possible solution to the move37 midterm exam
+The task is to get the openAI-gym BipedalWalker-v2 walking by trial and error
+This solution implements this by using an evolutionary algorithm
+'''
+
 import os
 import numpy as np
 import gym
