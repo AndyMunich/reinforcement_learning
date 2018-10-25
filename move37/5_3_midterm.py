@@ -75,7 +75,7 @@ def evaluate_policy( policy ):
     sum_rewards += 300 # get positive rewards to get rid of sign errors
     return sum_rewards
 
-rec_vid = False # dont record die video during training since it slows down the process
+rec_vid = False # dont record the video during training since it slows down the process
 should_record = lambda i: rec_vid
 env = gym.wrappers.Monitor(env, monitor_dir, video_callable=should_record, force=True)
 policy_pop = [gen_random_policy() for _ in range(n_policy)] # start with a random population of policies
